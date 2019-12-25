@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { RepoListComponent } from './repo-list/repo-list.component';
 import { ViewReposComponent } from './view-repos/view-repos.component';
 import { RepositoryViewComponent } from './repository-view/repository-view.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RepoListComponent,
     ViewReposComponent,
-    RepositoryViewComponent
+    RepositoryViewComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

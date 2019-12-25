@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, ChangeDetectionStrategy } from '@angular/core';
+import { Repo } from 'src/models/Repo.model';
 
 @Component({
   selector: 'app-repo-list',
@@ -7,8 +8,7 @@ import { Component, OnInit, Input, Output, ChangeDetectionStrategy } from '@angu
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RepoListComponent implements OnInit {
-  @Input() list: any[];
-
+  @Input() list: Repo[];
 
   constructor() { }
 

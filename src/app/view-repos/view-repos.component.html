@@ -1,1 +1,2 @@
-<app-repo-list [list]="list | async"></app-repo-list>
+<p *ngIf="!ready">Cargando...</p>
+<app-repo-list *ngIf="list" [list]="list | async"></app-repo-list>
